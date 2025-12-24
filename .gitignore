@@ -4,3 +4,5 @@
 rm_doc/
 rm_example/
 rm_install/
+log/
+log/latest_build

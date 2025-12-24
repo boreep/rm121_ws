@@ -62,4 +62,14 @@ install(TARGETS  rm_driver  DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY launch config
   DESTINATION share/${PROJECT_NAME})
+  
+ # --- 新增部分：将第三方库文件安装到 lib 目录 ---
+install(FILES
+  lib/libRM_Service.so
+  lib/libRM_Service.so.1
+  lib/libRM_Service.so.1.0
+  lib/libRM_Service.so.1.0.0
+  DESTINATION lib
+)
+# ----------------------------------------
 ament_package()
