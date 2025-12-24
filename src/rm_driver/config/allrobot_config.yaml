@@ -1,0 +1,36 @@
+right_rm_driver:
+  ros__parameters:
+    # robot param
+    arm_ip: "192.168.12.19"
+    tcp_port: 8080
+
+    arm_type: "RM_65"
+    arm_dof: 6
+
+    udp_ip: "192.168.12.111"
+    udp_port: 8089
+    udp_cycle: 10
+    udp_force_coordinate: 0
+    udp_hand: true
+    udp_arm_current_status: true
+    udp_joint_speed_state: true
+    arm_joints: ["right_joint1", "right_joint2", "right_joint3", "right_joint4", "right_joint5", "right_joint6"]
+
+
+left_rm_driver:
+  ros__parameters:
+    # robot param
+    arm_ip: "192.168.12.20"
+    tcp_port: 8080
+
+    arm_type: "RM_65"
+    arm_dof: 6
+
+    udp_ip: "192.168.12.111"
+    udp_port: 8090
+    udp_cycle: 10
+    udp_force_coordinate: 0
+    udp_hand: true
+    udp_arm_current_status: true
+    udp_joint_speed_state: true
+    arm_joints: ["left_joint1", "left_joint2", "left_joint3", "left_joint4", "left_joint5", "left_joint6"]

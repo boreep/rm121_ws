@@ -1,0 +1,6 @@
+*build*/
+*install*/
+*~*/
+rm_doc/
+rm_example/
+rm_install/
